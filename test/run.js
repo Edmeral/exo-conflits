@@ -23,7 +23,7 @@ tap.test('Simple use', (t) => {
   t.test('with no args', (t) => {
     run([], {env:{_TAP_IS_TTY: '1'}}, (er, o, e) => {
       t.match(er, null)
-      t.match(o, /^Hello World/)
+      t.match(o, /^Bonjour EDL/)
       t.end()
     })
   })
